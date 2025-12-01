@@ -1,0 +1,18 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>icons/new.svg</file>
+        <file>icons/open.svg</file>
+        <file>icons/close.svg</file>
+        <file>icons/save.svg</file>
+        <file>icons/save-as.svg</file>
+        <file>icons/quit.svg</file>
+        <file>icons/undo.svg</file>
+        <file>icons/redo.svg</file>
+        <file>icons/cut.svg</file>
+        <file>icons/copy.svg</file>
+        <file>icons/paste.svg</file>
+        <file>icons/select-all.svg</file>
+        <file>icons/correct.svg</file>
+    </qresource>
+</RCC>
