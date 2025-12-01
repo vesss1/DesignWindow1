@@ -19,7 +19,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void toggleDarkMode(bool checked);
+
 private:
     Ui::MainWindow *ui;
+    bool m_darkMode;
+    
+    void applyLightStyle();
+    void applyDarkStyle();
 };
 #endif // MAINWINDOW_H
