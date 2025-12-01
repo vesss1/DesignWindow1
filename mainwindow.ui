@@ -99,8 +99,15 @@ QStatusBar {
     <addaction name="actionAll"/>
     <addaction name="actionPaste"/>
    </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>檢視</string>
+    </property>
+    <addaction name="actionDarkMode"/>
+   </widget>
    <addaction name="menu_F"/>
    <addaction name="menu_E"/>
+   <addaction name="menu_V"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="fileToolBar">
@@ -238,6 +245,20 @@ QStatusBar {
    </property>
    <property name="shortcut">
     <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionDarkMode">
+   <property name="text">
+    <string>深色模式(&amp;D)</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="toolTip">
+    <string>切換深色/淺色介面</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
  </widget>
