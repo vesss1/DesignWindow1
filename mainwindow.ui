@@ -11,7 +11,59 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>文件編輯器</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f5f5f5;
+}
+QMenuBar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2px;
+}
+QMenuBar::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+QMenuBar::item:selected {
+    background-color: #e3f2fd;
+}
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 4px;
+}
+QMenu::item {
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+QMenu::item:selected {
+    background-color: #e3f2fd;
+}
+QToolBar {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 4px;
+    spacing: 6px;
+}
+QToolButton {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+}
+QToolButton:hover {
+    background-color: #e3f2fd;
+}
+QToolButton:pressed {
+    background-color: #bbdefb;
+}
+QStatusBar {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -64,6 +116,7 @@
    <addaction name="actionOpen"/>
    <addaction name="actionClose"/>
    <addaction name="actionSave"/>
+   <addaction name="actionCorrect"/>
    <addaction name="separator"/>
   </widget>
   <widget class="QToolBar" name="toolBar">
@@ -174,6 +227,17 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionCorrect">
+   <property name="text">
+    <string>更正(&amp;U)</string>
+   </property>
+   <property name="toolTip">
+    <string>更正上一步操作</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
    </property>
   </action>
  </widget>
